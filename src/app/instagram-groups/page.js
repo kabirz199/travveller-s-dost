@@ -14,7 +14,7 @@ export default function InstagramGroupsPage() {
     const fetchInstagramGroups = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://travel-rozf.onrender.com/core/instagram/');
+        const response = await fetch('https://traveldost-backend.onrender.com/core/instagram/');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

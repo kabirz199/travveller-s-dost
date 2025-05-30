@@ -3,7 +3,7 @@ import TripDetails from '@/components/TripDetails';
 
 async function getTripData(id) {
   try {
-    const response = await fetch('https://travel-rozf.onrender.com/core/trips/');
+    const response = await fetch('https://traveldost-backend.onrender.com/core/trips/');
     if (!response.ok) {
       throw new Error('Failed to fetch trips');
     }

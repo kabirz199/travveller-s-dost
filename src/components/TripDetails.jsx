@@ -11,7 +11,7 @@ const TripDetails = ({ trip, comparisonData }) => {
   const formatImageUrl = (imagePath) => {
     if (!imagePath) return '/images/default.png';
     if (imagePath.startsWith('http')) return imagePath;
-    return `https://res.cloudinary.com/dbkj0h2sh/${imagePath}`;
+    return `https://res.cloudinary.com/dmxafyehz/${imagePath}`;
   };
 
   // Function to format description with line breaks after full stops

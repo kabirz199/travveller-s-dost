@@ -14,13 +14,13 @@ export default function TripsPage() {
   const formatImageUrl = (imagePath) => {
     if (!imagePath) return '/images/default-trip.jpg';
     if (imagePath.startsWith('http')) return imagePath;
-    return `https://res.cloudinary.com/dbkj0h2sh/${imagePath}`;
+    return `https://res.cloudinary.com/dmxafyehz/${imagePath}`;
   };
 
   useEffect(() => {
     const fetchTrips = async () => {
       try {
-        const response = await fetch('https://travel-rozf.onrender.com/core/trips/');
+        const response = await fetch('https://traveldost-backend.onrender.com/core/trips/');
         if (!response.ok) {
           throw new Error('Failed to fetch trips');
         }

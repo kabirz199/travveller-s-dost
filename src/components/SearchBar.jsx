@@ -28,7 +28,7 @@ const SearchBar = () => {
       setError('');
       
       const response = await fetch(
-        `https://travel-rozf.onrender.com/core/trips/?search=${encodeURIComponent(searchTerm)}`
+        `https://traveldost-backend.onrender.com/core/trips/?search=${encodeURIComponent(searchTerm)}`
       );
       
       if (!response.ok) {

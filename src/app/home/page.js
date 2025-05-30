@@ -54,9 +54,9 @@ export default function Home() {
         
         // Fetch all APIs in parallel
         const [destinationRes, instaRes, tripsRes] = await Promise.all([
-          fetch('https://travel-rozf.onrender.com/core/destination-info/'),
-          fetch('https://travel-rozf.onrender.com/core/instagram/'),
-          fetch('https://travel-rozf.onrender.com/core/trips/')
+          fetch('https://traveldost-backend.onrender.com/core/destination-info/'),
+          fetch('https://traveldost-backend.onrender.com/core/instagram/'),
+          fetch('https://traveldost-backend.onrender.com/core/trips/')
         ]);
 
         const destinationData = await destinationRes.json();
@@ -68,7 +68,7 @@ export default function Home() {
           const firstTripImage = data.trips[0]?.trip_image[0]?.image || '/images/default.png';
           return {
             name,
-            image: firstTripImage.startsWith('http') ? firstTripImage : `https://res.cloudinary.com/dbkj0h2sh/${firstTripImage}`,
+            image: firstTripImage.startsWith('http') ? firstTripImage : `https://res.cloudinary.com/dmxafyehz/${firstTripImage}`,
             groups: new Set(data.trips.map(trip => trip.group)).size, 
             trips: data.trip_count,
             destination_priority: data.trips.some(trip => trip.destination_priority) // Check if any trip has destination_priority
@@ -106,7 +106,7 @@ export default function Home() {
             uniqueTrips.push({
               id: trip.id,
               name: trip.trip_spot,
-              image: firstImage.startsWith('http') ? firstImage : `https://res.cloudinary.com/dbkj0h2sh/${firstImage}`,
+              image: firstImage.startsWith('http') ? firstImage : `https://res.cloudinary.com/dmxafyehz/${firstImage}`,
               price: parseFloat(trip.price),
               duration: trip.duration,
               location: trip.destination,
@@ -135,7 +135,7 @@ export default function Home() {
         // Set initial background image
         if (processedDestinations.length > 0) {
           const firstImage = processedDestinations[0].image;
-          setBgImage(firstImage.startsWith('http') ? firstImage : `https://res.cloudinary.com/dbkj0h2sh/${firstImage}`);
+          setBgImage(firstImage.startsWith('http') ? firstImage : `https://res.cloudinary.com/dmxafyehz/${firstImage}`);
         }
 
       } catch (error) {
