@@ -58,7 +58,7 @@ const Footer = () => {
             <ul>
               <li>+91 90302 63255</li>
               <li>info@travellersdost.com</li>
-              <li>3rd Floor, Plot, No. 11-14-518/2, Siris Rd, above HP Gas – Samantha Shiva Sakthi Enterprises, Snehapuri Colony, L. B. Nagar, Hyderabad, Telangana 500074</li>
+              <li>Gopal Reddy Estate, Airport Rd, Gautam Nagar, Balanagar, Hyderabad, Telangana 500011</li>
             </ul>
           </div>
 
