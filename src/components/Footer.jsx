@@ -57,7 +57,7 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <ul>
               <li>+91 90302 63255</li>
-              <li>info@travellersdost.com</li>
+              <li>travellersdosthyd@gmail.com</li>
               <li>Gopal Reddy Estate, Airport Rd, Gautam Nagar, Balanagar, Hyderabad, Telangana 500011</li>
             </ul>
           </div>
